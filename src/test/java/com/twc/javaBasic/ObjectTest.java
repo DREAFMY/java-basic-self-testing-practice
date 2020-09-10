@@ -23,8 +23,8 @@ class ObjectTest {
         // Hint
         //  If you find it difficult, please check page 172 of "Core Java Vol 1", section 4.6.2.
         // <--start
-        final String expectedName = "expected";
-        final int expectedYearOfBirth = Integer.MAX_VALUE;
+        final String expectedName = "";
+        final int expectedYearOfBirth = 0;
         final LocalDate expectedRegisteredDate = LocalDate.now();
         // --end-->
 
@@ -48,7 +48,7 @@ class ObjectTest {
         //  `sameReference` and `instanceCreatedByMethod`.
         //
         // <--start
-        final Object expected = new Object();
+        final Object expected = sameReference;
         // --end-->
 
         assertEquals(expected, objectReference);
@@ -66,7 +66,7 @@ class ObjectTest {
         // Hint
         //  If you find it difficult, please check page 164 of "Core Java Vol 1", section 4.5.
         // <--start
-        final String expected = "";
+        final String expected = "Updated Name";
         // --end-->
 
         assertEquals(expected, instance.getName());
